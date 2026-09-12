@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/sabarish-codes/express-typescript-boilerplate/issues"
   },
-  "homepage": "https://github.com/sabarish-codes/express-typescript-boilerplate#readme"
+  "homepage": "https://github.com/sabarish-codes/express-typescript-boilerplate#readme",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
 }
