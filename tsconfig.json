@@ -42,7 +42,7 @@
 
     "paths": {
       "@/*": ["./src/*"]
-    },
+    }
   },
 
   "include": ["./src/**/*", "server.ts"],
