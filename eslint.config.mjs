@@ -7,6 +7,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 export default defineConfig({
+  ignores: ['commitlint.config.js'],
   files: ['**/*.{js,ts}'],
   extends: [
     js.configs.recommended,
